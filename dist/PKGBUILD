@@ -1,0 +1,24 @@
+pkgname=luma-git
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Ultra-lightweight screen temperature daemon for Wayland and X11"
+arch=("x86-64" "x86-64-v3" "x86-64-v4")
+url="https://github.com/dein-user/luma"
+license=("MIT")
+depends=("libxrandr" "wayland")
+makedepends=("cargo" "git")
+provides=("luma")
+conflicts=("luma")
+source=("git+${url}.git")
+sha256sums=("SKIP")
+
+build() {
+  cd "$srcdir/luma"
+  RUSTFLAGS="-C target-cpu=native" cargo build --release --locked
+}
+
+package() {
+  cd "$srcdir/luma"
+  install -Dm755 "target/release/luma" "$pkgdir/usr/bin/luma"
+  install -Dm644 "dist/luma.service" "$pkgdir/usr/lib/systemd/user/luma.service"
+}

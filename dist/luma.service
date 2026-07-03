@@ -1,0 +1,11 @@
+[Unit]
+Description=Ultra-lightweight screen temperature daemon
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/luma
+Restart=always
+
+[Install]
+WantedBy=default.target

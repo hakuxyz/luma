@@ -1,0 +1,1 @@
+/home/x4d1/Dokumente/Dev/luma/target/release/luma: /home/x4d1/Dokumente/Dev/luma/src/backend/mod.rs /home/x4d1/Dokumente/Dev/luma/src/backend/wayland.rs /home/x4d1/Dokumente/Dev/luma/src/backend/x11.rs /home/x4d1/Dokumente/Dev/luma/src/config.rs /home/x4d1/Dokumente/Dev/luma/src/core.rs /home/x4d1/Dokumente/Dev/luma/src/main.rs
