@@ -21,7 +21,7 @@ An ultra-lightweight, resource-efficient screen color temperature daemon written
 ### Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/luma.git
+git clone https://github.com/hakuxyz/luma.git
 cd luma
 ```
 
